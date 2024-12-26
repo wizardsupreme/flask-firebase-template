@@ -2,8 +2,8 @@
 
 {% block content %}
 <div class="text-center">
-    <h1>Welcome to Auth App</h1>
-    <p class="lead">Please login to access your dashboard</p>
+    <h1>Welcome to Flask Firebase App</h1>
+    <p class="lead">A secure and scalable application template</p>
     {% if not session.get('user_id') %}
         <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
     {% else %}
